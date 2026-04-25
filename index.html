@@ -3,66 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Resim Galerisi</title>
+    <title>Dünya Harikaları</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 class="title">Resim Galerisi</h1>
+<h1 class="title">Dünya Harikaları</h1>
 
-    <div class="gallery">
+<div class="gallery">
 
-        <!-- BÜYÜK KART -->
-        <div class="card card-large">
-            <img class="card-img" src="https://picsum.photos/600/400" alt="Doğa manzarası">
-            <div class="card-content">
-                <h3 class="card-title">Doğa</h3>
-                <p class="card-text">Harika bir doğa manzarası.</p>
-            </div>
+    <div class="card card-large" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/tacmahal.jpg" alt="Tac Mahal" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Tac Mahal</h3>
+            <p class="card-text">Aşkın simgesi olan bu eşsiz yapı.</p>
         </div>
-
-        <!-- NORMAL KARTLAR -->
-        <div class="card">
-            <img class="card-img" src="https://picsum.photos/300/200" alt="Şehir görünümü">
-            <div class="card-content">
-                <h3 class="card-title">Şehir</h3>
-                <p class="card-text">Modern şehir hayatı.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img" src="https://picsum.photos/301/200" alt="Deniz manzarası">
-            <div class="card-content">
-                <h3 class="card-title">Deniz</h3>
-                <p class="card-text">Sakin deniz görüntüsü.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img" src="https://picsum.photos/302/200" alt="Dağ manzarası">
-            <div class="card-content">
-                <h3 class="card-title">Dağ</h3>
-                <p class="card-text">Yüksek dağlar.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img" src="https://picsum.photos/303/200" alt="Orman manzarası">
-            <div class="card-content">
-                <h3 class="card-title">Orman</h3>
-                <p class="card-text">Yeşil doğa.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img" src="https://picsum.photos/304/200" alt="Göl manzarası">
-            <div class="card-content">
-                <h3 class="card-title">Göl</h3>
-                <p class="card-text">Sessiz göl.</p>
-            </div>
-        </div>
-
     </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/eyfel.jpg" alt="Eyfel Kulesi" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Eyfel Kulesi</h3>
+            <p class="card-text">Paris’in simgesi.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/cinseddi.jpg" alt="Çin Seddi" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Çin Seddi</h3>
+            <p class="card-text">Dünyanın en uzun yapılarından.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/kolezyum.jpg" alt="Kolezyum" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Kolezyum</h3>
+            <p class="card-text">Roma’nın tarihi arenası.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/machu.jpg" alt="Machu Picchu" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Machu Picchu</h3>
+            <p class="card-text">Gizemli antik şehir.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/petra.jpg" alt="Petra" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Petra</h3>
+            <p class="card-text">Kayalara oyulmuş şehir.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/stonehenge.jpg" alt="Stonehenge" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Stonehenge</h3>
+            <p class="card-text">Gizemli taş yapılar.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/angkor.jpg" alt="Angkor Wat" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Angkor Wat</h3>
+            <p class="card-text">Büyük tapınak kompleksi.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/kremlin.jpg" alt="Kremlin" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Kremlin</h3>
+            <p class="card-text">Rusya’nın tarihi merkezi.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/burj.jpg" alt="Burj Khalifa" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Burj Khalifa</h3>
+            <p class="card-text">Dünyanın en yüksek binası.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal(this)">
+        <img class="card-img" src="assets/images/sagrada.jpg" alt="Sagrada Familia" loading="lazy">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h3 class="card-title">Sagrada Familia</h3>
+            <p class="card-text">Gaudi’nin şaheseri.</p>
+        </div>
+    </div>
+
+</div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-box">
+        <img id="modalImg">
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+<script>
+function openModal(card){
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modalImg").src = card.querySelector("img").src;
+    document.getElementById("modalTitle").innerText = card.querySelector(".card-title").innerText;
+    document.getElementById("modalText").innerText = card.querySelector(".card-text").innerText;
+}
+
+function closeModal(){
+    document.getElementById("modal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
